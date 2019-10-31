@@ -9,11 +9,21 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Preparing...</div>
   <script>
     window.$docsify = {
       name: 'Ultimate Backend',
-      repo: 'https://github.com/juicycleff/ultimate-backend'
+      repo: 'https://github.com/juicycleff/ultimate-backend',
+      loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 3,
+      coverpage: true,
+      onlyCover: true,
+      notFoundPage: true,
+
+      // homepage: 'hom'
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
