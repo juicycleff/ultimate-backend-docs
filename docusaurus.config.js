@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Ultimate Backend',
+  tagline: 'A set of microservice packages for Typescript, Rust and GoLang',
+  url: 'https://ultimate-backend.xraph.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -10,9 +10,9 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Ultimate Backend',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Ultimate Backend Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -22,9 +22,9 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'https://xraph.com/blog?project=ultimate-backend', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/juicycleff/ultimate-backend',
           label: 'GitHub',
           position: 'right',
         },
@@ -51,15 +51,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/ultimate-backend',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/ultimate-backend',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/ultimate-backend',
             },
           ],
         },
@@ -68,16 +68,16 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              href: 'https://xraph.com/blog?project=ultimate-backend',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/facebook/ultimate-backend',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} XRaph Projects, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -88,13 +88,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/juicycleff/ultimate-backend-docs/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/juicycleff/ultimate-backend-docs/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
