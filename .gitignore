@@ -1,20 +1,56 @@
-# Dependencies
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+dist/*
+!/dist/v4
+!/dist/v5
+!/dist/v6
+!/dist/v7
+
+/tmp
+/out-tsc
+
+# dependencies
 /node_modules
 
-# Production
-/build
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+.vscode
+*.launch
+.settings/
+*.sublime-workspace
 
-# Generated files
-.docusaurus
-.cache-loader
+# IDE - VSCode
+*.code-workspace
+/.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# Misc
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Mock API
+/api/node_modules
+
+# compiled templates
+src/app/homepage/pages/**/*.html
