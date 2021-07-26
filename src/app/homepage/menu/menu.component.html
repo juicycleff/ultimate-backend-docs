@@ -1,0 +1,17 @@
+<nav class="nav-container" (click)="$event.stopPropagation()">
+  <app-menu-item
+    *ngFor="let item of items"
+    [isOpen]="item.isOpened"
+    [title]="item.title"
+    [externalUrl]="item?.externalUrl"
+    [icon]="item?.icon"
+    [path]="item?.path"
+    [children]="item.children"
+    class="nav-item"></app-menu-item>
+  <a
+    href="https://enterprise.ub.com"
+    target="_blank"
+    title="Enterprise scale advanced microservice meta-framework with GraphQL API and GRPC Microservices"
+    class="btn btn-support">Get enterprise support</a>
+  <!-- <a href="https://docs.ub.com/v7" class="btn btn-version">Version 7</a> -->
+</nav>

@@ -1,0 +1,64 @@
+<header>
+  <div
+    class="icon-wrapper"
+    (click)="toggle.emit()"
+    [class.opened]="isSidebarOpened">
+    <div class="nav-icon">
+      <!-- <div class="mobile-nav-icon">
+        <span></span>
+      </div> -->
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48"
+        width="48px" height="48px">
+        <g id="surface41582932">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(255, 255, 255);fill-opacity:1;"
+            d="M 4 10 L 4 14 L 44 14 L 44 10 Z M 4 22 L 4 26 L 44 26 L 44 22 Z M 4 34 L 4 38 L 44 38 L 44 34 Z M 4 34 " />
+        </g>
+      </svg>
+    </div>
+  </div>
+  <ng-content></ng-content>
+  <app-social-wrapper></app-social-wrapper>
+  <div class="menu-wrapper">
+    <div class="search-wrapper">
+      <i class="fa fa-search search-icon"></i>
+      <input id="search" class="search-input" placeholder="Search..." />
+    </div>
+    <ul>
+      <!-- <li>
+        <a
+          href="https://nestjs.com"
+          target="_blank"
+          title="NestJS - A node.js framework built on top of TypeScript"
+          >Our website</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://courses.nestjs.com"
+          target="_blank"
+          title="Courses | NestJS - A node.js framework built on top of TypeScript"
+          >Courses</a
+        >
+      </li>
+      <li><a routerLink="/support">Sponsor us</a></li>
+      <li>
+        <a
+          href="https://enterprise.nestjs.com"
+          target="_blank"
+          title="Enterprise | NestJS - A node.js framework built on top of TypeScript"
+          >Enterprise support</a
+        >
+      </li> -->
+    </ul>
+  </div>
+  <!--<div class="workshop-wrapper">
+    <img src="/assets/ng-camp-small.svg" alt="AngularCamp, Barcelona" />
+    <div class="workshop-info">
+      <h3 class="long-title">
+        <span>NestJS</span> at 2018 JSCamp Conference, Barcelona</h3>
+      <h3 class="short-title">
+        <span>NestJS</span> 2018 JSCamp</h3>
+      <a href="https://angularcamp.tech/workshops/scalable-nodejs-with-nest/" target="_blank">LEARN MORE</a>
+    </div>
+  </div>-->
+</header>

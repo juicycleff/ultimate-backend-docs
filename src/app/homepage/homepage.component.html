@@ -1,0 +1,67 @@
+<app-header (toggle)="toggleSidebar()" [isSidebarOpened]="isSidebarOpened">
+  <div class="logo-wrapper">
+    <a
+      href="https://github.com/juicycleff/ultimate-backend"
+      title="Documentation | NestJS - A node.js framework built on top of TypeScript">
+      <img alt="Ultimate Backend Logo" src="/assets/logo-ub.svg" />
+    </a>
+  </div>
+</app-header>
+<div class="container-fluid">
+  <app-menu [class.opened]="isSidebarOpened" perfectScrollbar></app-menu>
+  <div class="container" [class.wide]="!isSidebarOpened">
+    <div class="page-wrapper">
+      <app-toc [contentReference]="contentRef"></app-toc>
+      <router-outlet (activate)="onRouteActivate($event)"></router-outlet>
+    </div>
+    <div class="sponsors-wrapper">
+      <div class="sponsors-container">
+        <h3>Support us</h3>
+        <p>
+          Nest is an MIT-licensed open source project. It can grow thanks to the
+          support by these awesome people. If you'd like to join them, please
+          read more <a routerLink="/support">here</a>.
+        </p>
+        <!-- <div class="row clearfix">
+          <div class="inline-column">
+            <h4 class="title">Principal Sponsors</h4>
+            <a href="https://github.com/Sanofi-IADC" target="_blank">
+              <img
+                src="/assets/sponsors/sanofi.png"
+                alt="Sanofi Logo"
+                class="logo-sponsor" />
+            </a>
+            <a href="https://trilon.io/" target="_blank">
+              <img
+                src="/assets/sponsors/trilon.svg"
+                alt="Trilon Logo"
+                class="logo-sponsor" />
+            </a>
+          </div>
+          <div class="inline-column">
+            <h4 class="title">Sponsors / Partners</h4>
+            <a
+              href="https://opencollective.com/nest"
+              class="btn btn-primary"
+              target="_blank"
+              rel="nofollow">
+              Become a sponsor
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- <app-newsletter></app-newsletter> -->
+    <app-footer>
+      <p>
+        Made by
+        <a
+          href="https://xraph.com"
+          target="_blank"
+          title=" Rex Raphael | Full-Stack Software Engineer">
+          Rex Raphael
+        </a>
+      </p>
+    </app-footer>
+  </div>
+</div>
