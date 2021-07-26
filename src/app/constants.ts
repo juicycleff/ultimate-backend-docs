@@ -1,2 +1,2 @@
 export const HOMEPAGE_TITLE = 'Documentation';
-export const TITLE_SUFFIX = ' | NestJS - A progressive Node.js framework';
+export const TITLE_SUFFIX = ' | Ultimate Backend - Microservice SAAS, CQRS, Kubernetes';

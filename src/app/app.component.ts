@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     private readonly metaService: Meta,
     private readonly router: Router,
     private readonly activatedRoute: ActivatedRoute,
-  ) {}
+  ) { }
 
   async ngOnInit() {
     this.router.events

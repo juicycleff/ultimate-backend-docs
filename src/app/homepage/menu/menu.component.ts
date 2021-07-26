@@ -38,92 +38,76 @@ export class MenuComponent implements OnInit {
         { title: 'Custom decorators', path: '/custom-decorators' },
       ],
     },
-    {
-      title: 'Fundamentals',
-      isOpened: false,
-      children: [
-        { title: 'Custom providers', path: '/fundamentals/custom-providers' },
-        {
-          title: 'Asynchronous providers',
-          path: '/fundamentals/async-providers',
-        },
-        {
-          title: 'Dynamic modules',
-          path: '/fundamentals/dynamic-modules',
-        },
-        {
-          title: 'Injection scopes',
-          path: '/fundamentals/injection-scopes',
-        },
-        {
-          title: 'Circular dependency',
-          path: '/fundamentals/circular-dependency',
-        },
-        {
-          title: 'Module reference',
-          path: '/fundamentals/module-ref',
-        },
-        {
-          title: 'Lazy-loading modules',
-          path: '/fundamentals/lazy-loading-modules',
-        },
-        {
-          title: 'Execution context',
-          path: '/fundamentals/execution-context',
-        },
-        {
-          title: 'Lifecycle events',
-          path: '/fundamentals/lifecycle-events',
-        },
-        {
-          title: 'Platform agnosticism',
-          path: '/fundamentals/platform-agnosticism',
-        },
-        { title: 'Testing', path: '/fundamentals/testing' },
-      ],
-    },
-    {
-      title: 'Techniques',
-      isOpened: false,
-      children: [
-        { title: 'Database', path: '/techniques/database' },
-        { title: 'Mongo', path: '/techniques/mongodb' },
-        { title: 'Configuration', path: '/techniques/configuration' },
-        { title: 'Validation', path: '/techniques/validation' },
-        { title: 'Caching', path: '/techniques/caching' },
-        { title: 'Serialization', path: '/techniques/serialization' },
-        { title: 'Versioning', path: '/techniques/versioning' },
-        { title: 'Task scheduling', path: '/techniques/task-scheduling' },
-        { title: 'Queues', path: '/techniques/queues' },
-        { title: 'Logging', path: '/techniques/logger' },
-        { title: 'Cookies', path: '/techniques/cookies' },
-        { title: 'Events', path: '/techniques/events' },
-        { title: 'Compression', path: '/techniques/compression' },
-        { title: 'File upload', path: '/techniques/file-upload' },
-        { title: 'Streaming files', path: '/techniques/streaming-files' },
-        { title: 'HTTP module', path: '/techniques/http-module' },
-        { title: 'Session', path: '/techniques/session' },
-        { title: 'Model-View-Controller', path: '/techniques/mvc' },
-        { title: 'Performance (Fastify)', path: '/techniques/performance' },
-        { title: 'Server-Sent Events', path: '/techniques/server-sent-events' },
-      ],
-    },
-    {
-      title: 'Security',
-      isOpened: false,
-      children: [
-        { title: 'Authentication', path: '/security/authentication' },
-        { title: 'Authorization', path: '/security/authorization' },
-        {
-          title: 'Encryption and Hashing',
-          path: '/security/encryption-and-hashing',
-        },
-        { title: 'Helmet', path: '/security/helmet' },
-        { title: 'CORS', path: '/security/cors' },
-        { title: 'CSRF Protection', path: '/security/csrf' },
-        { title: 'Rate limiting', path: '/security/rate-limiting' },
-      ],
-    },
+    // {
+    //   title: 'Fundamentals',
+    //   isOpened: false,
+    //   children: [
+    //     { title: 'Custom providers', path: '/fundamentals/custom-providers' },
+    //     {
+    //       title: 'Asynchronous providers',
+    //       path: '/fundamentals/async-providers',
+    //     },
+    //     {
+    //       title: 'Dynamic modules',
+    //       path: '/fundamentals/dynamic-modules',
+    //     },
+    //     {
+    //       title: 'Injection scopes',
+    //       path: '/fundamentals/injection-scopes',
+    //     },
+    //     {
+    //       title: 'Circular dependency',
+    //       path: '/fundamentals/circular-dependency',
+    //     },
+    //     {
+    //       title: 'Module reference',
+    //       path: '/fundamentals/module-ref',
+    //     },
+    //     {
+    //       title: 'Lazy-loading modules',
+    //       path: '/fundamentals/lazy-loading-modules',
+    //     },
+    //     {
+    //       title: 'Execution context',
+    //       path: '/fundamentals/execution-context',
+    //     },
+    //     {
+    //       title: 'Lifecycle events',
+    //       path: '/fundamentals/lifecycle-events',
+    //     },
+    //     {
+    //       title: 'Platform agnosticism',
+    //       path: '/fundamentals/platform-agnosticism',
+    //     },
+    //     { title: 'Testing', path: '/fundamentals/testing' },
+    //   ],
+    // },
+    // {
+    //   title: 'Techniques',
+    //   isOpened: false,
+    //   children: [
+    //     { title: 'Database', path: '/techniques/database' },
+    //     { title: 'Mongo', path: '/techniques/mongodb' },
+    //     { title: 'Configuration', path: '/techniques/configuration' },
+    //     { title: 'Validation', path: '/techniques/validation' },
+    //     { title: 'Caching', path: '/techniques/caching' },
+    //     { title: 'Serialization', path: '/techniques/serialization' },
+    //     { title: 'Versioning', path: '/techniques/versioning' },
+    //     { title: 'Task scheduling', path: '/techniques/task-scheduling' },
+    //     { title: 'Queues', path: '/techniques/queues' },
+    //     { title: 'Logging', path: '/techniques/logger' },
+    //     { title: 'Cookies', path: '/techniques/cookies' },
+    //     { title: 'Events', path: '/techniques/events' },
+    //     { title: 'Compression', path: '/techniques/compression' },
+    //     { title: 'File upload', path: '/techniques/file-upload' },
+    //     { title: 'Streaming files', path: '/techniques/streaming-files' },
+    //     { title: 'HTTP module', path: '/techniques/http-module' },
+    //     { title: 'Session', path: '/techniques/session' },
+    //     { title: 'Model-View-Controller', path: '/techniques/mvc' },
+    //     { title: 'Performance (Fastify)', path: '/techniques/performance' },
+    //     { title: 'Server-Sent Events', path: '/techniques/server-sent-events' },
+    //   ],
+    // },
     {
       title: 'GraphQL',
       isOpened: false,
@@ -150,47 +134,11 @@ export class MenuComponent implements OnInit {
         { title: 'Federation', path: '/graphql/federation' },
       ],
     },
-    {
-      title: 'WebSockets',
-      isOpened: false,
-      children: [
-        { title: 'Gateways', path: '/websockets/gateways' },
-        { title: 'Exception filters', path: '/websockets/exception-filters' },
-        { title: 'Pipes', path: '/websockets/pipes' },
-        { title: 'Guards', path: '/websockets/guards' },
-        { title: 'Interceptors', path: '/websockets/interceptors' },
-        { title: 'Adapters', path: '/websockets/adapter' },
-      ],
-    },
-    {
-      title: 'Microservices',
-      isOpened: false,
-      children: [
-        { title: 'Overview', path: '/microservices/basics' },
-        { title: 'Redis', path: '/microservices/redis' },
-        { title: 'MQTT', path: '/microservices/mqtt' },
-        { title: 'NATS', path: '/microservices/nats' },
-        { title: 'RabbitMQ', path: '/microservices/rabbitmq' },
-        { title: 'Kafka', path: '/microservices/kafka' },
-        { title: 'gRPC', path: '/microservices/grpc' },
-        {
-          title: 'Custom transporters',
-          path: '/microservices/custom-transport',
-        },
-        {
-          title: 'Exception filters',
-          path: '/microservices/exception-filters',
-        },
-        { title: 'Pipes', path: '/microservices/pipes' },
-        { title: 'Guards', path: '/microservices/guards' },
-        { title: 'Interceptors', path: '/microservices/interceptors' },
-      ],
-    },
-    {
-      title: 'Standalone apps',
-      isOpened: false,
-      path: '/application-context',
-    },
+    // {
+    //   title: 'Standalone apps',
+    //   isOpened: false,
+    //   path: '/application-context',
+    // },
     {
       title: 'CLI',
       isOpened: false,
@@ -200,24 +148,6 @@ export class MenuComponent implements OnInit {
         { title: 'Libraries', path: '/cli/libraries' },
         { title: 'Usage', path: '/cli/usages' },
         { title: 'Scripts', path: '/cli/scripts' },
-      ],
-    },
-    {
-      title: 'OpenAPI',
-      isOpened: false,
-      children: [
-        { title: 'Introduction', path: '/openapi/introduction' },
-        {
-          title: 'Types and Parameters',
-          path: '/openapi/types-and-parameters',
-        },
-        { title: 'Operations', path: '/openapi/operations' },
-        { title: 'Security', path: '/openapi/security' },
-        { title: 'Mapped Types', path: '/openapi/mapped-types' },
-        { title: 'Decorators', path: '/openapi/decorators' },
-        { title: 'CLI Plugin', path: '/openapi/cli-plugin' },
-        { title: 'Other features', path: '/openapi/other-features' },
-        { title: 'Migration guide', path: '/openapi/migration-guide' },
       ],
     },
     {
@@ -256,24 +186,6 @@ export class MenuComponent implements OnInit {
       ],
     },
     {
-      title: 'Migration guide',
-      isOpened: false,
-      path: '/migration-guide',
-    },
-    {
-      title: 'Official courses',
-      externalUrl: 'https://courses.nestjs.com/',
-    },
-    {
-      title: 'Discover',
-      isOpened: false,
-      children: [{ title: 'Who is using Nest?', path: '/discover/companies' }],
-    },
-    {
-      title: 'T-Shirts and Hoodies',
-      externalUrl: 'https://nestjs.threadless.com/',
-    },
-    {
       title: 'Support us',
       isOpened: false,
       path: '/support',
@@ -283,7 +195,7 @@ export class MenuComponent implements OnInit {
   constructor(
     private readonly route: ActivatedRoute,
     private readonly router: Router,
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.router.events
