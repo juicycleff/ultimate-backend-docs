@@ -37,7 +37,7 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
     private readonly router: Router,
     private readonly elementRef: ElementRef,
     private readonly renderer: Renderer2,
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.router.events
@@ -113,8 +113,8 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
     const isPositionFixed =
       window.pageYOffset + window.innerHeight <
       newsletterRef.offsetTop -
-        footerRef.offsetHeight +
-        newsletterRef.offsetHeight;
+      footerRef.offsetHeight +
+      newsletterRef.offsetHeight;
 
     if (!isPositionFixed) {
       this.renderer.setStyle(carbonRef, 'position', 'absolute');
@@ -134,25 +134,25 @@ export class HomepageComponent implements OnInit, OnDestroy, AfterViewInit {
       return;
     }
     this.contentRef = nativeElement.querySelector('.content');
-    if (this.contentRef && !this.contentRef.querySelector('.carbon-wrapper')) {
-      const scriptTag = this.createCarbonScriptTag();
-      const carbonWrapper = document.createElement('div');
-      carbonWrapper.classList.add('carbon-wrapper');
-      carbonWrapper.prepend(scriptTag);
+    // if (this.contentRef && !this.contentRef.querySelector('.carbon-wrapper')) {
+    //   const scriptTag = this.createCarbonScriptTag();
+    //   const carbonWrapper = document.createElement('div');
+    //   carbonWrapper.classList.add('carbon-wrapper');
+    //   carbonWrapper.prepend(scriptTag);
 
-      this.contentRef.prepend(carbonWrapper);
-    }
+    //   this.contentRef.prepend(carbonWrapper);
+    // }
     this.cd.markForCheck();
   }
 
-  createCarbonScriptTag(): HTMLScriptElement {
-    const scriptTag = document.createElement('script');
-    scriptTag.type = 'text/javascript';
-    scriptTag.src =
-      '//cdn.carbonads.com/carbon.js?serve=CK7I653M&placement=nestjscom';
-    scriptTag.id = '_carbonads_js';
-    return scriptTag;
-  }
+  // createCarbonScriptTag(): HTMLScriptElement {
+  //   const scriptTag = document.createElement('script');
+  //   scriptTag.type = 'text/javascript';
+  //   scriptTag.src =
+  //     '//cdn.carbonads.com/carbon.js?serve=CK7I653M&placement=nestjscom';
+  //   scriptTag.id = '_carbonads_js';
+  //   return scriptTag;
+  // }
 
   createDocSearchScriptTag(): HTMLScriptElement {
     const scriptTag = document.createElement('script');
